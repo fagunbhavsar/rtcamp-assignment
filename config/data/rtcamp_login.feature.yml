@@ -1,0 +1,24 @@
+Validate login activity of rtCamp site:
+
+  username:
+  password:
+
+Validate login activity of rtCamp site when password is incorrect:
+  username:
+  password:
+
+Validate login activity of rtCamp site when username is incorrect:
+  username:
+  password:
+
+
+
+
+
+
+
+
+
+
+
+
