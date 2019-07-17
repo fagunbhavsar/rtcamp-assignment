@@ -1,5 +1,5 @@
 Given(/^I open rtCamp site$/) do
-  pending
+
 end
 
 Then(/^I click on activity button$/) do
