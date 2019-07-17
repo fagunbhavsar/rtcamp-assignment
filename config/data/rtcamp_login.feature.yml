@@ -4,12 +4,14 @@ Validate login activity of rtCamp site:
   password: "demo"
 
 Validate login activity of rtCamp site when password is incorrect:
-  username:
-  password:
+  username: "demo"
+  password1: "Demo"
+  error1: "ERROR: The password you entered for the username #{username}  is incorrect."
 
 Validate login activity of rtCamp site when username is incorrect:
-  username:
-  password:
+  username2: "demo1"
+  password: "demo"
+  error2: "Error : Invalid username. "
 
 
 

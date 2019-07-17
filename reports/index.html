@@ -2,16 +2,15 @@ Using the functional profile...
 [36m@rtcamp[0m [36m@login[0m [36m@functional[0m
 Feature: rtCamp site, validating login functionality
 
-  [36m@rtcamplogin[0m
-  Scenario: Validate login activity of rtCamp site[90m # features/rtcamp_login.feature:6[0m
-    [32mGiven I open rtCamp site[90m                       # features/steps/rtcamp_login.rb:1[0m[0m
-    [32mThen I click on activity button[90m                # features/steps/rtcamp_login.rb:5[0m[0m
-    [32mAnd I enter username[90m                           # features/steps/rtcamp_login.rb:9[0m[0m
-    [32mAnd I enter password[90m                           # features/steps/rtcamp_login.rb:13[0m[0m
-    [32mAnd I click on log in button[90m                   # features/steps/rtcamp_login.rb:17[0m[0m
-    [32mThen I see rtPanel banner[90m                      # features/steps/rtcamp_login.rb:21[0m[0m
-    [32mAnd I see profile name and logout button[90m       # features/steps/rtcamp_login.rb:25[0m[0m
+  [36m@loginwrongusername[0m
+  Scenario: Validate login activity of rtCamp site when username is incorrect[90m # features/rtcamp_login.feature:25[0m
+    [32mGiven I open rtCamp site[90m                                                  # features/steps/rtcamp_login.rb:1[0m[0m
+    [32mThen I click on activity button[90m                                           # features/steps/rtcamp_login.rb:5[0m[0m
+    [32mAnd I enter incorrect username[90m                                            # features/steps/rtcamp_login.rb:38[0m[0m
+    [32mAnd I enter password[90m                                                      # features/steps/rtcamp_login.rb:13[0m[0m
+    [32mAnd I click on log in button[90m                                              # features/steps/rtcamp_login.rb:17[0m[0m
+    [32mThen I see error message related to incorrect username[90m                    # features/steps/rtcamp_login.rb:42[0m[0m
 
 1 scenario ([32m1 passed[0m)
-7 steps ([32m7 passed[0m)
-0m54.617s
+6 steps ([32m6 passed[0m)
+0m13.760s

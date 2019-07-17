@@ -14,13 +14,19 @@
 
   @loginwrongpassword
   Scenario: Validate login activity of rtCamp site when password is incorrect
-    And I enter incorrect password with correct username
+    Given I open rtCamp site
+    Then I click on activity button
+    And I enter username
+    And I enter incorrect password
     And I click on log in button
     Then I see error message related to incorrect password
 
   @loginwrongusername
   Scenario: Validate login activity of rtCamp site when username is incorrect
-    And I enter incorrect username with correct password
+    Given I open rtCamp site
+    Then I click on activity button
+    And I enter incorrect username
+    And I enter password
     And I click on log in button
     Then  I see error message related to incorrect username
 

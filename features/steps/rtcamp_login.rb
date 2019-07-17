@@ -26,18 +26,20 @@ And(/^I see profile name and logout button$/) do
     on(RtCampPage).validate_profile
 end
 
-And(/^I enter incorrect password with correct username$/) do
-  pending
+And(/^I enter incorrect password$/) do
+    on(RtCampPage).invalid_password(@data["password1"])
 end
 
 Then(/^I see error message related to incorrect password$/) do
-  pending
+  actual = on(RtCampPage).invalid_password_error
+  expected = @data["error1"]
 end
 
-And(/^I enter incorrect username with correct password$/) do
-  pending
+And(/^I enter incorrect username$/) do
+  on(RtCampPage).invalid_username(@data["username2"])
 end
 
 Then(/^I see error message related to incorrect username$/) do
-  pending
+  actual = on(RtCampPage).invalid_username_error
+  expected = @data["error2"]
 end

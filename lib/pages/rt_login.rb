@@ -28,4 +28,19 @@ class RtCampPage < Page
     @browser.element(:class => 'logout').exist?
   end
 
+  def invalid_password(password1)
+    @browser.element(:id => 'bp-login-widget-user-pass').send_keys(password1)
+  end
+  def invalid_password_error
+    actual_error = @browser.element(:id => 'login_error', :visible_text => 'ERROR: The password you entered for the username #{username}  is incorrect.')
+  end
+
+  def invalid_username(username2)
+    @browser.element(:id => 'bp-login-widget-user-login').send_keys(username2)
+  end
+
+  def invalid_username_error
+    actual_error = @browser.element(:id => 'login_error', :visible_text => 'Error : Invalid username. ')
+  end
+
 end
