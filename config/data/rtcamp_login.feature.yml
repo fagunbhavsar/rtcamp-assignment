@@ -1,7 +1,7 @@
 Validate login activity of rtCamp site:
 
-  username:
-  password:
+  username: "demo"
+  password: "demo"
 
 Validate login activity of rtCamp site when password is incorrect:
   username:

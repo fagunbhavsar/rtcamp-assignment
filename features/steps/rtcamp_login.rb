@@ -1,25 +1,29 @@
 Given(/^I open rtCamp site$/) do
-
+    visit(RtCampPage)
 end
 
 Then(/^I click on activity button$/) do
-  pending
+    on(RtCampPage).open_rtcamp_page
 end
 
-And(/^I enter username and password$/) do
-  pending
+And(/^I enter username$/) do
+    on(RtCampPage).enter_username(@data["username"])
+end
+
+And(/^I enter password$/) do
+    on(RtCampPage).enter_password(@data["password"])
 end
 
 And(/^I click on log in button$/) do
-  pending
+    on(RtCampPage).click_login
 end
 
 Then(/^I see rtPanel banner$/) do
-  pending
+    on(RtCampPage).validate_rt_banner
 end
 
 And(/^I see profile name and logout button$/) do
-  pending
+    on(RtCampPage).validate_profile
 end
 
 And(/^I enter incorrect password with correct username$/) do

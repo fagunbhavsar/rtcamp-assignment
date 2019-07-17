@@ -6,7 +6,8 @@
   Scenario: Validate login activity of rtCamp site
     Given I open rtCamp site
     Then I click on activity button
-    And I enter username and password
+    And I enter username
+    And I enter password
     And I click on log in button
     Then I see rtPanel banner
     And I see profile name and logout button

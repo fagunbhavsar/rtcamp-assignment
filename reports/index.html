@@ -1,16 +1,17 @@
 Using the functional profile...
-[36m@basicapp[0m [36m@functional[0m
-Feature: Create a basic app to send an SMS or an Email
+[36m@rtcamp[0m [36m@login[0m [36m@functional[0m
+Feature: rtCamp site, validating login functionality
 
-  [36m@leftsidemenu[0m
-  Scenario: Validate left side menu details for an opened tab called Basic on app page[90m # features/fuseapp.feature:73[0m
-    [32mGiven I open quick fuse app link[90m                                                   # features/steps/fuseapp.rb:1[0m[0m
-    [32mThen I click on Create an app button[90m                                               # features/steps/fuseapp.rb:5[0m[0m
-    [32mThen I see a popup[90m                                                                 # features/steps/fuseapp.rb:9[0m[0m
-    [32mAnd I click on Let's get started button[90m                                            # features/steps/fuseapp.rb:13[0m[0m
-    [32mThen I see application panel[90m                                                       # features/steps/fuseapp.rb:17[0m[0m
-    [32mAnd I see Basic tab is opened with different sections on left hand side column[90m     # features/steps/fuseapp.rb:149[0m[0m
+  [36m@rtcamplogin[0m
+  Scenario: Validate login activity of rtCamp site[90m # features/rtcamp_login.feature:6[0m
+    [32mGiven I open rtCamp site[90m                       # features/steps/rtcamp_login.rb:1[0m[0m
+    [32mThen I click on activity button[90m                # features/steps/rtcamp_login.rb:5[0m[0m
+    [32mAnd I enter username[90m                           # features/steps/rtcamp_login.rb:9[0m[0m
+    [32mAnd I enter password[90m                           # features/steps/rtcamp_login.rb:13[0m[0m
+    [32mAnd I click on log in button[90m                   # features/steps/rtcamp_login.rb:17[0m[0m
+    [32mThen I see rtPanel banner[90m                      # features/steps/rtcamp_login.rb:21[0m[0m
+    [32mAnd I see profile name and logout button[90m       # features/steps/rtcamp_login.rb:25[0m[0m
 
 1 scenario ([32m1 passed[0m)
-6 steps ([32m6 passed[0m)
-0m22.073s
+7 steps ([32m7 passed[0m)
+0m54.617s
