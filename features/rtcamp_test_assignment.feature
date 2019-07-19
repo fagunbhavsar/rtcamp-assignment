@@ -38,7 +38,7 @@
     And I enter password
     And I click on log in button
     Then I see Activity label with text field below it
-    And I click in text field
+    And I click on text field
     And I see button with attach media tool tip
     And I click on attach media button
     And I select a file from local system

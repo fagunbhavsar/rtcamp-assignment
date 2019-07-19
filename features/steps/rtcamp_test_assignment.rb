@@ -45,23 +45,23 @@ Then(/^I see error message related to incorrect username$/) do
 end
 
 Then(/^I see Activity label with text field below it$/) do
-  pending
+   on(RtCampMediaPage).validate_activity_banner
 end
 
-And(/^I click in text field$/) do
-  pending
+And(/^I click on text field$/) do
+   on(RtCampMediaPage).click_on_text_field
 end
 
 And(/^I see button with attach media tool tip$/) do
-  pending
+   on(RtCampMediaPage).validate_upload_button
 end
 
 And(/^I click on attach media button$/) do
-  pending
+  on(RtCampMediaPage).click_on_upload_button
 end
 
 And(/^I select a file from local system$/) do
-  pending
+  on(RtCampMediaPage).upload_media_file
 end
 
 And(/^I see uploaded image below text field$/) do

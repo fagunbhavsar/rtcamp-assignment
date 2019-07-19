@@ -13,9 +13,10 @@ Validate login activity of rtCamp site when username is incorrect:
   password: "demo"
   error2: "Error : Invalid username. "
 
-
-
-
+Validate new media file upload functionality:
+  def datapath filename
+      File.expand_path(File.join(File.dirname(__FILE__), filename))
+  end
 
 
 
