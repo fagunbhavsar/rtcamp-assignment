@@ -1,16 +1,30 @@
 Using the functional profile...
 [36m@rtcamp[0m [36m@login[0m [36m@functional[0m
-Feature: rtCamp site, validating login functionality
+Feature: rtCamp site and validating media related functionality
 
-  [36m@loginwrongpassword[0m
-  Scenario: Validate login activity of rtCamp site when password is incorrect[90m # features/rtcamp_login.feature:16[0m
-    [32mGiven I open rtCamp site[90m                                                  # features/steps/rtcamp_login.rb:1[0m[0m
-    [32mThen I click on activity button[90m                                           # features/steps/rtcamp_login.rb:5[0m[0m
-    [32mAnd I enter username[90m                                                      # features/steps/rtcamp_login.rb:9[0m[0m
-    [32mAnd I enter incorrect password[90m                                            # features/steps/rtcamp_login.rb:29[0m[0m
-    [32mAnd I click on log in button[90m                                              # features/steps/rtcamp_login.rb:17[0m[0m
-    [32mThen I see error message related to incorrect password[90m                    # features/steps/rtcamp_login.rb:33[0m[0m
+  [36m@newmediaupload[0m
+  Scenario: Validate new media file upload functionality[90m # features/rtcamp_    [32mGiven I open rtCamp si    [32mGiven I open rtCamp site[90m                             # features/steps/rtcamp_test_assignment.rb:1[0m[0m
+    [32mThen I click on activity button[90m                      # features/steps/rtcamp_test_assignment.rb:5[0m[0m
+    [32mAnd I enter username[90m                                 # features/steps/rtcamp_test_assignment.rb:9[0m[0m
+    [32mAnd I enter password[90m                                 # features/steps/rtcamp_test_assignment.rb:13[0m[0m
+    [32mAnd I click on log in button[90m                         # features/steps/rtcamp_test_assignment.rb:17[0m[0m
+    [32mThen I see Activity label with text field below it[90m   # features/steps/rtcamp_test_assignment.rb:47[0m[0m
+    [32mAnd I click on text field[90m                            # features/steps/rtcamp_test_assignment.rb:51[0m[0m
+    [32mAnd I see button with attach media tool tip[90m          # features/steps/rtcamp_test_assignment.rb:55[0m[0m
+    [32mAnd I click on attach media button[90m                   # features/steps/rtcamp_test_assignment.rb:59[0m[0m
+    [31mAnd I select a file from local system[90m                # features/steps/rtcamp_test_assignment.rb:63[0m[0m
+[31m      No such file or directory - \Desktop\file1.jpg (Errno::ENOENT)[0m
+[31m      ./lib/pages/rtcamp_media.rb:23:in `upload_media_file'[0m
+[31m      ./features/steps/rtcamp_test_assignment.rb:64:in `/^I select a file from local system$/'[0m
+[31m      features/rtcamp_test_assignment.feature:44:in `And I select a file from local system'[0m
+    [36mAnd I see uploaded image below text field[90m            # features/steps/rtcamp_test_assignment.rb:67[0m[0m
+    [36mAnd I select post privacy value as Private[90m           # features/steps/rtcamp_test_assignment.rb:71[0m[0m
+    [36mThen I click on Post Update[90m                          # features/steps/rtcamp_test_assignment.rb:75[0m[0m
+    [36mAnd I see newly uploaded media post[90m                  # features/steps/rtcamp_test_assignment.rb:79[0m[0m
 
-1 scenario ([32m1 passed[0m)
-6 steps ([32m6 passed[0m)
-0m13.136s
+[31mFailing Scenarios:[0m
+[31mcucumber -p functional features/rtcamp_test_assignment.feature:34[0m[90m # Scenario: Validate new media file upload functionality[0m
+
+1 scenario ([31m1 failed[0m)
+14 steps ([31m1 failed[0m, [36m4 skipped[0m, [32m9 passed[0m)
+0m45.913s

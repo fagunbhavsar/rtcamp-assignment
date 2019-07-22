@@ -1,5 +1,5 @@
 class RtCampMediaPage < Page
-      base_url          page_url
+      page_url          base_url
 
   def validate_activity_banner
       @browser.element(:class => 'entry-title', :visual_text => 'Activity').exist?
@@ -18,8 +18,9 @@ class RtCampMediaPage < Page
     @browser.element(:id => 'rtmedia-add-media-button-post-update').click
   end
 
-  def upload_media_file
-    @browser.file_field(:name => "file1.jpg").set(datapath(filename))
+  def upload_media_file(filename)
+    require"pry";binding.pry
+    @browser.file_field.set(filename)
   end
 
 

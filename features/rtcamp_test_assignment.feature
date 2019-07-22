@@ -1,6 +1,6 @@
 @rtcamp @login @functional
 
-    Feature: rtCamp site, validating media related functionality (Upload media file, upload an album, like/unlike an uploaded media, change cover banner)
+    Feature: rtCamp site and validating media related functionality
 
   @rtcamplogin
   Scenario: Validate login activity of rtCamp site
