@@ -71,11 +71,35 @@
     And I click on Albums link
     Then I see newly created album
 
-   @likemedia
+   @likeunlikemedia
    Scenario: Validate like functionality for an uploaded media
+     Given I open rtCamp site
+     Then I click on activity button
+     And I enter username
+     And I enter password
+     And I click on log in button
+     Then I click on profile name
+     Then I click on media link
+     Then I click on albums link
+     Then I click on newly created album
+     Then I click on any one uploaded media file
+     Then I click on like button
+     And I see the like message
+     Then I click on the same button again
+     And I see the like button as it is
 
-
-
+   @changecover
+   Scenario: Validate change cover image functionality
+     Given I open rtCamp site
+     Then I click on activity button
+     And I enter username
+     And I enter password
+     And I click on log in button
+     Then I click on profile name
+     Then I click on Change Cover Image
+     Then I select a file from local system
+     And I see newly uploaded cover image
+     Then I click on profile name again
 
 
 

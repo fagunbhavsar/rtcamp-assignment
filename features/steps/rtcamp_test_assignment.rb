@@ -143,3 +143,39 @@ end
 Then(/^I see newly created album$/) do
   pending
 end
+
+Then(/^I click on newly created album$/) do
+  pending
+end
+
+Then(/^I click on any one uploaded media file$/) do
+  pending
+end
+
+Then(/^I click on like button$/) do
+  pending
+end
+
+And(/^I see the like message$/) do
+  pending
+end
+
+Then(/^I click on the same button again$/) do
+  pending
+end
+
+And(/^I see the like button as it is$/) do
+  pending
+end
+
+Then(/^I click on Change Cover Image$/) do
+  pending
+end
+
+And(/^I see newly uploaded cover image$/) do
+  pending
+end
+
+Then(/^I click on profile name again$/) do
+  pending
+end
