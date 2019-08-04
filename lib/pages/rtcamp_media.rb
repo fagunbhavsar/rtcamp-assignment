@@ -19,7 +19,7 @@ class RtCampMediaPage < Page
   end
 
   def upload_media_file(filename)
-    require"pry";binding.pry
+    #require"pry";binding.pry
     @browser.file_field.set(filename)
   end
 

@@ -16,7 +16,7 @@ Validate login activity of rtCamp site when username is incorrect:
 Validate new media file upload functionality:
   username: "demo"
   password: "demo"
-  filename: "\\Desktop\\file1.jpg"
+  filename: "samplefiles/file1.jpg"
 
 
 

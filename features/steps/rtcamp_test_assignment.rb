@@ -61,7 +61,9 @@ And(/^I click on attach media button$/) do
 end
 
 And(/^I select a file from local system$/) do
-  on(RtCampMediaPage).upload_media_file(@data['filename'])
+  #require "pry";binding.pry
+  sample_file = File.expand_path(@data['filename'])
+  on(RtCampMediaPage).upload_media_file(sample_file)
 end
 
 And(/^I see uploaded image below text field$/) do
