@@ -23,5 +23,30 @@ class RtCampMediaPage < Page
     @browser.file_field.set(filename)
   end
 
+  def validate_uploaded_media_file
+    @browser.element(:class => 'plupload_file_name', :title => 'file1.jpg').exist?
+  end
+
+  def validate_post_privacy
+    @browser.element(:id => 'rtSelectPrivacy', :visual_text => 'Private').exist?
+  end
+
+  def submit_post
+    @browser.element(:id => 'aw-whats-new-submit').click
+  end
+
+   def click_profile_name
+     #require"pry";binding.pry
+     @browser.element(:href => 'https://qa.rtcamp.net/members/demo/', :visible_text => 'demo').click
+   end
+
+  def click_media_tab
+    #require"pry";binding.pry
+    @browser.element(:id => 'user-media').click
+  end
+
+  def validate_added_media_file
+    @browser.element(:class => 'rtmedia-list-item', :title => 'file1.jpg').exist?
+  end
 
 end

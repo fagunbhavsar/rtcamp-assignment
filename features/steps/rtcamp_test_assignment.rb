@@ -56,9 +56,9 @@ And(/^I see button with attach media tool tip$/) do
    on(RtCampMediaPage).validate_upload_button
 end
 
-And(/^I click on attach media button$/) do
-  on(RtCampMediaPage).click_on_upload_button
-end
+#And(/^I click on attach media button$/) do
+  #on(RtCampMediaPage).click_on_upload_button
+#end
 
 And(/^I select a file from local system$/) do
   #require "pry";binding.pry
@@ -67,24 +67,32 @@ And(/^I select a file from local system$/) do
 end
 
 And(/^I see uploaded image below text field$/) do
-  pending
+  on(RtCampMediaPage).validate_uploaded_media_file
 end
 
-And(/^I select post privacy value as Private$/) do
-  pending
+And(/^I see post privacy value as Private$/) do
+  on(RtCampMediaPage).validate_post_privacy
 end
 
-Then(/^I click on Post Update$/) do
-  pending
-end
-
-And(/^I see newly uploaded media post$/) do
-  pending
+And(/^I click on Post Update$/) do
+  on(RtCampMediaPage).submit_post
 end
 
 Then(/^I click on profile name$/) do
-  pending
+  on(RtCampMediaPage).click_profile_name
 end
+
+Then(/^I click on media button$/) do
+  on(RtCampMediaPage).click_media_tab
+end
+
+And(/^I see newly uploaded media post$/) do
+  on(RtCampMediaPage).validate_added_media_file
+end
+
+#Then(/^I click on profile name$/) do
+  #on(RtCampMediaPage).click_profile_name
+#end
 
 Then(/^I click on media link$/) do
   pending

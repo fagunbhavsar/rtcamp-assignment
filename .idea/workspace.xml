@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="13db3da1-53ab-4301-adcf-29f2c4f04616" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/data/rtcamp_test_assignment.feature.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/data/rtcamp_test_assignment.feature.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/rtcamp_test_assignment.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/rtcamp_test_assignment.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/steps/rtcamp_test_assignment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/rtcamp_test_assignment.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/rtcamp_login.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/rtcamp_login.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/pages/rtcamp_media.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/rtcamp_media.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/index.html" afterDir="false" />
     </list>
@@ -111,7 +112,9 @@
       <workItem from="1564493372689" duration="1417000" />
       <workItem from="1564579925923" duration="51000" />
       <workItem from="1564580094755" duration="16000" />
-      <workItem from="1564912638651" duration="2204000" />
+      <workItem from="1564912638651" duration="2898000" />
+      <workItem from="1565009620400" duration="498000" />
+      <workItem from="1565097559068" duration="5595000" />
     </task>
     <servers />
   </component>
@@ -128,7 +131,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

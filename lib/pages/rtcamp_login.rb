@@ -24,8 +24,9 @@ class RtCampPage < Page
   end
 
   def validate_profile
-    @browser.element(:class => 'bp-login-widget-user-link', :link => 'demo').exist?
-    @browser.element(:class => 'logout').exist?
+    #require"pry";binding.pry
+    @browser.element(:class => 'bp-login-widget-user-link', :visible_text => 'demo').exist?
+    @browser.element(:class => 'logout', :visible_text => 'Log Out').exist?
   end
 
   def invalid_password(password1)

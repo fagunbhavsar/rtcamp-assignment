@@ -40,11 +40,14 @@
     Then I see Activity label with text field below it
     And I click on text field
     And I see button with attach media tool tip
-    And I click on attach media button
+    #And I click on attach media button
     And I select a file from local system
+    And I click on text field
     And I see uploaded image below text field
-    And I select post privacy value as Private
-    Then I click on Post Update
+    And I see post privacy value as Private
+    And I click on Post Update
+    Then I click on profile name
+    Then I click on media button
     And I see newly uploaded media post
 
   @newalbumupload
